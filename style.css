@@ -161,3 +161,28 @@ body{
     color: var(--Grayish-cyan);
     border-radius: 5px;
 }
+
+
+@media screen and (max-width: 680px) and (min-width: 290px) {
+    .logo{
+        margin-top: 165px;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .billContainer , .tipContainer {
+        width: 100%;
+    }
+    .tipContainer{
+        margin-top: 20px;
+        row-gap: 10px;
+    }
+    .percent{
+        width: calc((100% / 2) - 7.5px);
+    }
+    .rest{
+        margin: 0;
+    }
+}
