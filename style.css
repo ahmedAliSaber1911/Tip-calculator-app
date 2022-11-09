@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+:root{
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%); 
+    --Strong-cyan: hsl(172, 67%, 45%);     
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--Grayish-cyan);
+  }
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Light-grayish-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.container{
+    width: 55%;
+    height: 60%;
+    background-color: var(--White);
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    column-gap: 45px;
+}
+/* bill container */
+.billContainer{
+    height: 100%;
+    width: 50%;
+}
+.bill{
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+.billInput , .numberInput{
+    all: unset;
+    width: 100%;
+    text-align: right;
+    background-color: var(--Very-light-grayish-cyan);
+    height: 20px;
+    color: var(--Very-dark-cyan);
+    padding: 5px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: 13px 7px ;
+    background-size: 8px;
+}
+.billInput{
+    background-image: url(./images/icon-dollar.svg);
+}
+.bill>p , .select>p  , .number p{
+    font-size: 12px;
+    color: var(--Grayish-cyan);
+    margin-bottom: 5px;
+}
+.select{
+    margin-bottom: 40px;
+}
+.percentContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.percent{
+    width: calc((100% / 3) - 7.5px);
+    height: 40px;
+    background-color: var(--Very-dark-cyan);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.percent:hover{
+    background-color: var(--Strong-cyan);
+    cursor: pointer;
+}
+.custom{
+    width: 88.5px;
+    background-color: var(--Very-light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    text-align: right;
+    padding-right: 10px;   
+}
+.custom:hover{
+    border: 1px solid var(--Strong-cyan);
+    cursor: pointer;
+}
+.number>div{
+    display: flex;
+    justify-content: space-between;
+}
+.numberInput{
+    background-image: url(./images/icon-person.svg);
+}
+.errorText{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+.error{
+    border: 1px solid red;
+}
+/* tip container */
+.tipContainer{
+    height: 100%;
+    width: 50%;
+    padding: 30px;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.tipAmount{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    font-size: 12px;
+    color:var(--Very-light-grayish-cyan);
+}
+.person{
+    font-size: 10px;
+    color: var(--Grayish-cyan);
+}
+.tipCount{
+    font-size: 33px;
+    color: var(--Strong-cyan);
+}
+.rest{
+    height: 40px;
+    background-color: var(--Strong-cyan);
+    opacity: .3;
+    border: none;
+    margin-top: 50px;
+    color: var(--Grayish-cyan);
+    border-radius: 5px;
+}
