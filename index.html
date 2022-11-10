@@ -17,18 +17,21 @@
   <main class="container">
     <div class="billContainer">
       <div class="bill">
-        <p>Bill</p>
+        <div>
+          <p>bill</p>
+          <div class="errorbill">Can't be zero</div>
+        </div>
         <input type="number" placeholder="0" class="billInput">
       </div>
       <div class="select">
         <p>Select Tip %</p>
         <div class="percentContainer">
-          <div class="percent">5%</div>
-          <div class="percent">10%</div>
-          <div class="percent">15%</div>
-          <div class="percent">25%</div>
-          <div class="percent">50%</div>
-          <input type="number" class="custom" placeholder="Custom">
+          <div class="percent" >5%</div>
+          <div class="percent" >10%</div>
+          <div class="percent" >15%</div>
+          <div class="percent" >25%</div>
+          <div class="percent" >50%</div>
+          <input type="number" class="custom"  placeholder="Custom">
         </div>
       </div>
       <div class="number">
@@ -36,7 +39,7 @@
         <p>Number of People</p>
         <div class="errorText">Can't be zero</div>
       </div>
-        <input type="number" placeholder="0" class="numberInput ">
+        <input type="number" placeholder="0" class="numberInput">
       </div>
     </div>
     <div class="tipContainer">
@@ -54,25 +57,11 @@
         </div>
         <div class="tipCount" id="total">$0.00</div>
       </div>
-      <button class="rest">RESET</button>
+      <button class="rest" >RESET</button>
     </div>
 
   </main>
-
-  <!-- 
-  
-
-  
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  
--->
-
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -67,7 +67,7 @@ body{
 .billInput{
     background-image: url(./images/icon-dollar.svg);
 }
-.bill>p , .select>p  , .number p{
+.bill p , .select>p  , .number p{
     font-size: 12px;
     color: var(--Grayish-cyan);
     margin-bottom: 5px;
@@ -108,17 +108,20 @@ body{
     border: 1px solid var(--Strong-cyan);
     cursor: pointer;
 }
-.number>div{
+.number>div , .bill>div{
     display: flex;
     justify-content: space-between;
 }
 .numberInput{
     background-image: url(./images/icon-person.svg);
 }
-.errorText{
+.errorText  , .errorbill{
     color: red;
     font-size: 12px;
     display: none;
+}
+.errorTextActive{
+    display: block;
 }
 .error{
     border: 1px solid red;
@@ -161,8 +164,17 @@ body{
     color: var(--Grayish-cyan);
     border-radius: 5px;
 }
-
-
+.rest:hover{
+    cursor: pointer;
+    background-color: var(--Light-grayish-cyan);
+}
+.restActive{
+    opacity: 1;
+    color: black;
+}
+.percentClick{
+    background-color: var(--Light-grayish-cyan);
+}
 @media screen and (max-width: 680px) and (min-width: 290px) {
     .logo{
         margin-top: 165px;
